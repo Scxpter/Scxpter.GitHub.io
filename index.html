@@ -1,34 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<meta charset="utf=8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scxpter</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-    .Welcome {
-        font-family: Anton;
-        text-align: center;
-        color: rgb(0, 253, 34);
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scxpter</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://proicons.netlify.app/css/icons.min.css">
+</head>
+
+<body>
+
+    <audio src="/assets/audio/BG.mp3" autoplay>
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
+
+<div class="alert" style="display: none;" id="FC" >
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong>FC:</strong> (insert fc here)
+  </div>
+
+<u class="title" style="color: green;">Scxpter</u>
+<br>
+<u class="socials">Socials</u>
+<img onclick="myFunction()" src="assets/images/scxpter button.png" height="80px" width="170px">
+<br>
+<a href="discord.html" class="link"><i class="fab fa-discord"></i> Discord</a>
+<br>
+<a href="https://www.youtube.com/Scxpter" class="link"><i class="fab fa-youtube"></i> Youtube</a>
+<br>
+<a href="https://twitter.com/YesIAmScxpter" class="link"><i class="fab fa-twitter"></i> Twitter</a>
+<br>
+<a href="https://www.twitch.tv/yesiamscxpter" class="link"><i class="fab fa-twitch"></i> Twitch</a>
+<br>
+<a href="https://twitter.com/FNF_FESTIVEDAWN" class="button2"><img src="assets/images/scxpter button 2.png" height="80px" width="170px"></a>
+<br>
+<br>
+<h7><a href="https://github.com/Scxpter/scxpter.github.io"><i class="fab fa-github"></i></a> | site made by <a href="https://www.thediamondk.com"><u>TDK</u></a></h7>
+<script>
+function myFunction() {
+    var x = document.getElementById("FC");
+    {
+      x.style.display = "block";
     }
-    .alertbar { 
-        background-color: #1beb00; 
-        color: #FFFFFF; 
-        display: block; 
-        line-height: 45px;
-        height: 50px; 
-        position: relative; 
-        text-align: center; 
-        text-decoration: none; 
-        top: 0px; 
-        width: 100%;
-        z-index: 100;
-        font-family: Anton;
-        }
-</style>
+  }
+</script>
 
-<div class="alertbar">
-    <marquee behavior="scroll" direction="left" scrollamount="10">Welcome to my website!</marquee>
-</div>
+</body>
 
-<center><iframe src="https://discord.com/widget?id=690203728057467069&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></center>
